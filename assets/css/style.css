@@ -24,7 +24,7 @@ html {
 
 section {
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 
@@ -154,7 +154,7 @@ input::placeholder {
 
 @media(max-width:767px) {
     .bg-blue {
-        height: 100vh;
+        height: 100%;
         transform: translateY(-50%);
     }
 
@@ -193,7 +193,7 @@ input::placeholder {
     }
 
     input {
-        padding: 5px 20px 5px 10px;
+        padding: 10px 20px 10px 10px;
     }
 
     h1 {
@@ -207,12 +207,13 @@ input::placeholder {
     .btn,
     .btn2 {
         padding: 5px 10px;
-        border-radius: 6px;
+        border-radius: 4px;
+        font-size: 12px;
 
     }
 
     form {
-        gap: 15px;
+        gap: 10px;
     }
 
 
