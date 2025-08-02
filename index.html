@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+
+        <div id="blue" class="bg-blue"></div>
+
+        <div class="flex flex-col h-full aligncenter">
+            <div id="signup" class="signup">
+                <form action="">
+                    <h1 class="crimson">Sign Up Form</h1>
+                    <input type="text" name="" id="" placeholder="Username">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="password" name="" id="" placeholder="Password">
+                    <div class="flex aligncenter gap20">
+                        <a onclick="openSignIn()" class="btn2">Sign In</a>
+                        <a class="btn">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+
+            <div id="signin" class="signin">
+                <form action="">
+                    <h1 class="blue">Sign In Form</h1>
+                    <input type="text" name="" id="" placeholder="Username">
+                    <input type="password" name="" id="" placeholder="Password">
+                    <div class="flex aligncenter gap20">
+                        <a class="btn2">Sign In</a>
+                        <a href="" onclick="openSignUp()" class="btn">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script>
+        const blue = document.getElementById('blue');
+        function openSignUp() {
+            event.preventDefault();
+            blue.classList.add('translateX-50')
+            blue.classList.remove('-translateX-50')
+            blue.style.backgroundColor = 'crimson'
+            document.getElementById('signin').classList.add('-translateX-100');
+            document.getElementById('signup').classList.remove('translateX-100');
+        }
+        function openSignIn() {
+            event.preventDefault();
+            blue.classList.add('-translateX-50')
+            blue.classList.remove('translateX-50')
+            blue.style.backgroundColor = '#0ea5e9'
+            document.getElementById('signin').classList.remove('-translateX-100');
+            document.getElementById('signup').classList.add('translateX-100');
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
